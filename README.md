@@ -19,6 +19,11 @@ Prikazuje se post_thumbnail i ces sadrzaj clanka
 
 TODO
 ----
+Srediti stilove za sekciju "Izvori finansiranja"
+
+Srediti stilove za sekciju "Poslovi"
+
+Srediti stilove za sekciju "Startapi"
 
 
 
