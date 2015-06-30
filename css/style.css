@@ -143,6 +143,10 @@ h5 {
 	color: #fff;
 }
 
+tt, code, kbd, samp{
+	font-family: 'Ubuntu', sans-serif;
+}
+
 .widget {
 	margin-bottom: 40px;
 }
@@ -475,7 +479,7 @@ ul.wpbdp-categories{
 	width: 633px;
 	padding: 0 0 12px 0;
 	margin-bottom: 15px;
-	border-bottom: 1px solid #eee;	
+	border-bottom: 1px solid #eee;
 }
 
 .cf_list_categories li:after,  #wpbdp-categories .cat-item:after {
@@ -770,6 +774,11 @@ ul.wpbdp-categories{
 }
 /*Danko*/
 .wpbdmac {display: none;}
+.listing-details,
+.listing-details span{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
 .listing-details .wpbdp-field-businessname label,
 .listing-details .wpbdp-field-shortbusinessdescription  label,
 #wpbdp-category-page .view-listing,
@@ -784,8 +793,8 @@ ul.wpbdp-categories{
 .cf-description p{
 	line-height: 23px;
 }
-.cf-ad-info table{ 
-	width: 100%; 
+.cf-ad-info table{
+	width: 100%;
 	line-height: 22px;
 	text-align: left;
 	font-size: 16px;
@@ -793,6 +802,10 @@ ul.wpbdp-categories{
 
 #posts-container .cf-info.w100 {
 	margin: 5px;
+}
+.wpbdp-field-businessname span{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.3em;
 }
 #posts-container {
 	width: 100%;

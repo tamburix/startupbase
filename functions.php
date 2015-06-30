@@ -139,6 +139,16 @@ function twentytwelve_scripts_styles() {
 			'subset' => $subsets,
 		);
 		wp_enqueue_style( 'twentytwelve-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
+
+		wp_register_style( 'reset', get_template_directory_uri() . '/css/reset.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'reset' );
+
+        wp_register_style( 'colorbox', get_template_directory_uri() . '/css/colorbox.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'colorbox' );
+
+        wp_register_style( 'main-styles', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'main-styles' );
+
 	}
 
 	/*
@@ -151,6 +161,12 @@ function twentytwelve_scripts_styles() {
 	 */
 	wp_enqueue_style( 'twentytwelve-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentytwelve-style' ), '20121010' );
 	$wp_styles->add_data( 'twentytwelve-ie', 'conditional', 'lt IE 9' );
+
+	wp_register_script( 'main-js', get_template_directory_uri() . '/js/main.js', array('bootstrap'), '1.2' );
+		wp_enqueue_script( 'main-js' );
+
+		wp_register_script( 'colorbox-js', get_template_directory_uri() . '/js/jquery.colorbox-min.js', array('bootstrap'), '1.2' );
+		wp_enqueue_script( 'colorbox-js' );
 }
 add_action( 'wp_enqueue_scripts', 'twentytwelve_scripts_styles' );
 
@@ -251,7 +267,7 @@ function twentytwelve_content_nav( $html_id ) {
 	<div class="pagination">
 		<?php next_post_link( '%link', '<div class="page next">Next Page &gt;</div>' ); ?>
 		<?php previous_post_link( '%link', '<div class="page previous">&lt; Previous Page</div>' ); ?>
-					
+
 	</div>
 	<?php endif;
 }

@@ -12,7 +12,7 @@ NOTES
 -------------
 Template je child tema TwentyTen teme
 
-Homepage - condent.php
+Homepage - content.php
 Prikazuje se post_thumbnail i ces sadrzaj clanka
 
 
